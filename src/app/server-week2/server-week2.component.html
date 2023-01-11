@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="onSetPassword()">Display Details</button>
+      <p *ngIf="secretPassword; else noPassword">Secret Password = 'Tuna'</p>
+    </div>
+    <ng-template #noPassword>
+        <p>No Password was set</p>
+    </ng-template>
+  </div>
+</div>

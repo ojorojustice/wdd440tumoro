@@ -6,6 +6,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
+import { ServerWeek2Component } from './server-week2/server-week2.component';
 
 
 
@@ -15,7 +16,8 @@ import { WarningComponent } from './warning/warning.component';
     ServerComponent,
     ServersComponent,
     SuccessComponent,
-    WarningComponent
+    WarningComponent,
+    ServerWeek2Component
   ],
   imports: [
     BrowserModule,
