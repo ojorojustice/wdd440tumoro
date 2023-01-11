@@ -5,4 +5,7 @@ import { Component } from "@angular/core";
     templateUrl: './server.component.html'
 })
 export class ServerComponent{
+    firstName: string = 'Olajide';
+    lastName: string = 'Ojo';
+    age: number = 42;
 }

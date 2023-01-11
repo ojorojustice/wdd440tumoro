@@ -1,4 +1,21 @@
-<p>servers works!</p>
+<p [innerText]="allowNewServer">servers works!</p>
+<input type="text" class="form-control" (input)="logValueOfInput($event)" />
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+<input type="text" class="form-control" [(ngModel)]="userName" />
+
+<label>UserName</label>
+<input type="" text class="form-control" [(ngModel)]="userName" />
+<button class="btn btn-primary" [disabled]="userName.length === 0? true:false">Reset</button>
+<p>Username is {{ userName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onServerCreated()"
+>
+  My button
+</button>
+<p>{{ serverName }}</p>
+<p>{{ serverStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
